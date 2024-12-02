@@ -23,21 +23,12 @@ export default function NewPractices() {
               first year easier. We’ve helped plumbing professionals like you take the next
               steps in building successful businesses.
             </p>
-            <p className="mt-6 text-blue-600 font-medium">
-              Interested in any of our services or packages?{" "}
-              <a
-                href="/services-programs"
-                className="underline hover:text-blue-800 transition-colors duration-300"
-              >
-                Click here to explore services.
-              </a>
-            </p>
           </div>
   
           {/* Right Column */}
           <div className="bg-blue-600 text-white p-10 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
             <h2 className="text-2xl font-semibold mb-4">
-              We’ve supported over 200 plumbing businesses.
+            Interested in only one service? No problem. We offer each service independently.
             </h2>
             <p>
               From branding to advertising, our team has helped plumbing professionals
@@ -127,7 +118,7 @@ export default function NewPractices() {
   
         {/* Call-to-Action Section */}
         <div className="bg-blue-600 text-white py-16 text-center">
-          <h2 className="text-4xl font-bold mb-6">6 Month Process</h2>
+          <h2 className="text-4xl font-bold mb-6">1 Month Process</h2>
           <p className="text-lg leading-relaxed max-w-3xl mx-auto">
             Let us guide your plumbing business with a step-by-step system focused on
             branding, website development, and online advertising. Your success is our goal.
@@ -142,7 +133,7 @@ export default function NewPractices() {
             how we can bring your plumbing business to life with tailored solutions.
           </p>
           <a
-            href="/contact"
+            href="https://calendly.com/successplumbing/15min"
             className="bg-blue-600 hover:bg-blue-700 text-white py-3 px-8 rounded-lg text-lg font-semibold transition duration-300"
           >
             Book a Consultation

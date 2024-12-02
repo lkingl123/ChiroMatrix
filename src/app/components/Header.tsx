@@ -179,7 +179,7 @@ export default function Header() {
 
                 {/* Call-to-Action Button */}
                 <a
-                    href="/book-a-call"
+                    href="https://calendly.com/successloke/15min"
                     className="hidden md:inline-block bg-blue-600 text-white text-lg font-bold px-6 py-3 rounded-lg shadow hover:bg-blue-700 transition duration-300"
                 >
                     Book a Call
