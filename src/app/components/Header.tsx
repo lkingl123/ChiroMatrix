@@ -15,13 +15,13 @@ export default function Header() {
 
     return (
         <header className="bg-white shadow-md sticky top-0 z-50">
-            <div className="max-w-7xl mx-auto flex items-center justify-between py-4 px-6">
+            <div className="max-w-7xl mx-auto flex items-center justify-between py-1 px-6">
                 {/* Logo */}
                 <a href="/" className="flex items-center">
                     <img
                         src="/logo.svg"
                         alt="Plumbing Logo"
-                        className="w-[80px] h-[80px] object-contain"
+                        className="w-[100px] h-[100px] object-contain"
                     />
                 </a>
 
@@ -30,7 +30,7 @@ export default function Header() {
                     {/* Static Link */}
                     <a
                         href="/who-we-are"
-                        className="text-gray-700 hover:text-blue-600 transition duration-300"
+                        className="text-gray-700 hover:text-blue-600 transition duration-300 font-semibold"
                     >
                         WHO WE ARE
                     </a>
@@ -41,7 +41,7 @@ export default function Header() {
                         onMouseEnter={() => handleMouseEnter("whatWeDo")}
                         onMouseLeave={handleMouseLeave}
                     >
-                        <div className="flex items-center text-gray-700 hover:text-blue-600 transition duration-300 cursor-pointer">
+                        <div className="flex items-center text-gray-700 hover:text-blue-600 transition duration-300 cursor-pointer font-semibold">
                             WHAT WE DO
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -84,7 +84,7 @@ export default function Header() {
                         onMouseEnter={() => handleMouseEnter("servicesPrograms")}
                         onMouseLeave={handleMouseLeave}
                     >
-                        <div className="flex items-center text-gray-700 hover:text-blue-600 transition duration-300 cursor-pointer">
+                        <div className="flex items-center text-gray-700 hover:text-blue-600 transition duration-300 cursor-pointer font-semibold">
                             SERVICES/PROGRAMS
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -139,7 +139,7 @@ export default function Header() {
                         onMouseEnter={() => handleMouseEnter("resources")}
                         onMouseLeave={handleMouseLeave}
                     >
-                        <div className="flex items-center text-gray-700 hover:text-blue-600 transition duration-300 cursor-pointer">
+                        <div className="flex items-center text-gray-700 hover:text-blue-600 transition duration-300 cursor-pointer font-semibold">
                             RESOURCES
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
