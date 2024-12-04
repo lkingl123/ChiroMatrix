@@ -44,7 +44,7 @@ export default function WhoWeAre() {
               key={index}
               className="flex flex-col items-center opacity-0"
               style={{
-                animation: `fadeIn 1s ease-in-out ${index * 1.5}s forwards`,
+                animation: `fadeIn 1s ease-in-out ${index * 0.6}s forwards`,
               }}
             >
               <img
