@@ -28,38 +28,38 @@ const ChatBot = () => {
 
   const handleSendMessage = async () => {
     if (!input.trim()) return;
-
+  
     const userMessage = { role: "user", content: input };
-
-    // Clear input field immediately after sending the message
-    setInput("");
-
-    // Add user message to the messages state
+    setInput(""); // Clear input field immediately after sending
     setMessages((prev) => [...prev, userMessage]);
-
+  
     // Simulate bot typing
     setIsTyping(true);
-
+  
     try {
       const response = await fetch("/api/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ message: input }),
       });
-
+  
       const data = await response.json();
-
-      // Add a delay before showing the bot's response
+      const replyLength = data.reply.length;
+  
+      // Calculate delay dynamically based on message length
+      const typingDelay = Math.min(Math.max(replyLength / 10, 1000), 3000);
+  
       setTimeout(() => {
+        // Directly add the full response
         setMessages((prev) => [
           ...prev,
-          { role: "bot", content: data.reply.length > 300 ? data.reply.slice(0, 300) + "..." : data.reply },
+          { role: "bot", content: data.reply },
         ]);
-        setIsTyping(false); // Stop the typing indicator
-      }, 2000); // 1.5 seconds delay
+        setIsTyping(false);
+      }, typingDelay);
     } catch (error) {
       console.error("Error sending message:", error);
-      setIsTyping(false); // Stop the typing indicator if there's an error
+      setIsTyping(false);
     }
   };
 

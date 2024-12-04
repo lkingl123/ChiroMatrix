@@ -43,7 +43,7 @@ export async function POST(req: Request) {
           {
             role: "system",
             content:
-              "You are a helpful assistant for a website marketing business that caters to plumbers.",
+              "You are a concise assistant for plumbing website marketing. Keep answers short and clear.",
           },
           { role: "user", content: message },
         ],
