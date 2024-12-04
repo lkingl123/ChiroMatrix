@@ -9,12 +9,17 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
-          },
-          fontFamily: {
-              sans: ['Poppins', 'sans-serif'],
-          },
+        // Custom colors from the palette
+        lapis: "#2F6690", // Lapis Lazuli
+        cerulean: "#3A7CA5", // Cerulean
+        platinum: "#D9DCD6", // Platinum
+        indigo: "#16425B", // Indigo Dye
+        sky: "#81C3D7", // Sky Blue
+      },
+      fontFamily: {
+        sans: ["Honk", "ui-sans-serif", "system-ui"], // Use Honk for sans-serif globally
+        heading: ["Honk", "serif"], // Honk for headings as well
+      },
     },
   },
   plugins: [],

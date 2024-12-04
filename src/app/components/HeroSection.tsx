@@ -90,7 +90,7 @@ export default function HeroSection() {
             {/* Features Section */}
             <div className="mt-16 grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-5xl mx-auto px-4 relative">
                 {/* Feature 1 */}
-                <div className="bg-blue-800 rounded-lg p-6 shadow-lg text-center text-white">
+                <div className="bg-blue-800 rounded-lg p-6 shadow-lg text-center text-white bg-gray-900">
                     <h3 className="text-lg font-semibold">Logo Design</h3>
                     <p className="mt-3 text-sm">
                         Your journey begins with branding and quickly becomes a matter of optimizing content and storytelling.
@@ -104,7 +104,7 @@ export default function HeroSection() {
                 </div>
 
                 {/* Feature 2 */}
-                <div className="bg-blue-800 rounded-lg p-6 shadow-lg text-center text-white">
+                <div className="bg-blue-800 rounded-lg p-6 shadow-lg text-center text-white bg-gray-900">
                     <h3 className="text-lg font-semibold">Website Design & Hosting</h3>
                     <p className="mt-3 text-sm">
                         We love to design amazing plumbing websites and build data-driven marketing plans proven to grow practices.
@@ -118,7 +118,7 @@ export default function HeroSection() {
                 </div>
 
                 {/* Feature 3 */}
-                <div className="bg-blue-800 rounded-lg p-6 shadow-lg text-center text-white">
+                <div className="bg-blue-800 rounded-lg p-6 shadow-lg text-center text-white bg-gray-900">
                     <h3 className="text-lg font-semibold">SEO & Online Advertising</h3>
                     <p className="mt-3 text-sm">
                         Together, we can engage a broader audience and educate your community on the importance of plumbing care.

@@ -134,7 +134,7 @@ export default function Header() {
                     </div>
 
                     {/* Dropdown for RESOURCES */}
-                    <div
+                    {/* <div
                         className="relative group"
                         onMouseEnter={() => handleMouseEnter("resources")}
                         onMouseLeave={handleMouseLeave}
@@ -174,7 +174,7 @@ export default function Header() {
                                 </a>
                             </div>
                         )}
-                    </div>
+                    </div> */}
                 </nav>
 
                 {/* Call-to-Action Button */}
