@@ -13,7 +13,6 @@ export default function HeroSection() {
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
 
-        // Example preparation for backend connection
         try {
             const response = await fetch("/api/contact", {
                 method: "POST",
@@ -25,7 +24,6 @@ export default function HeroSection() {
 
             if (response.ok) {
                 console.log("Form submitted successfully");
-                // Add any success logic here (e.g., showing a message or redirecting)
             } else {
                 console.error("Error submitting form");
             }
@@ -35,24 +33,32 @@ export default function HeroSection() {
     };
 
     return (
-        <section className="bg-blue-900 text-white py-16 relative">
-            <div className="max-w-4xl mx-auto text-center px-4">
+        <section
+            className="bg-cover bg-center relative text-white py-16"
+            style={{
+                backgroundImage: "url('/herosection-image.jpg')", // Replace with your image path
+            }}
+        >
+            {/* Dark Overlay */}
+            <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+
+            {/* Hero Content */}
+            <div className="relative max-w-4xl mx-auto text-center px-4">
                 {/* Main Heading */}
-                <h1 className="text-5xl font-extrabold tracking-tight leading-tight">
+                <h1 className="text-5xl font-extrabold tracking-tight leading-tight bg-transparent">
                     Plumbing Solutions Made Easy
                 </h1>
 
                 {/* Subtext */}
-                <p className="mt-6 text-lg font-light leading-relaxed">
+                <p className="mt-6 text-lg font-light leading-relaxed bg-transparent">
                     Partner with the team for Plumbing Websites, Plumbing Marketing Tools, and Strategic Consulting.
                     <br />
                     We brand the future of plumbing.
                 </p>
 
                 {/* Call-to-Action Form */}
-                <div className="mt-8 bg-white rounded-lg shadow-md p-6 max-w-lg mx-auto text-gray-800">
+                <div className="mt-8 bg-white bg-opacity-90 rounded-lg shadow-md p-6 max-w-lg mx-auto text-gray-800 relative">
                     <form className="flex flex-col gap-4" onSubmit={handleSubmit}>
-                        {/* Full Name Input */}
                         <input
                             type="text"
                             name="name"
@@ -62,8 +68,6 @@ export default function HeroSection() {
                             className="flex-1 px-4 py-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                             required
                         />
-
-                        {/* Email Input */}
                         <input
                             type="email"
                             name="email"
@@ -73,8 +77,6 @@ export default function HeroSection() {
                             className="flex-1 px-4 py-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                             required
                         />
-
-                        {/* Submit Button */}
                         <button
                             type="submit"
                             className="w-full bg-blue-600 text-white font-medium py-3 rounded-lg hover:bg-blue-700 transition duration-300 text-center"
@@ -86,12 +88,12 @@ export default function HeroSection() {
             </div>
 
             {/* Features Section */}
-            <div className="mt-16 grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-5xl mx-auto px-4">
+            <div className="mt-16 grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-5xl mx-auto px-4 relative">
                 {/* Feature 1 */}
-                <div className="bg-blue-800 rounded-lg p-6 shadow-lg text-center">
+                <div className="bg-blue-800 rounded-lg p-6 shadow-lg text-center text-white">
                     <h3 className="text-lg font-semibold">Logo Design</h3>
                     <p className="mt-3 text-sm">
-                        Your practice's success journey begins with branding and quickly becomes a matter of optimizing content and storytelling.
+                        Your journey begins with branding and quickly becomes a matter of optimizing content and storytelling.
                     </p>
                     <a
                         href="/services-programs/branding"
@@ -102,7 +104,7 @@ export default function HeroSection() {
                 </div>
 
                 {/* Feature 2 */}
-                <div className="bg-blue-800 rounded-lg p-6 shadow-lg text-center">
+                <div className="bg-blue-800 rounded-lg p-6 shadow-lg text-center text-white">
                     <h3 className="text-lg font-semibold">Website Design & Hosting</h3>
                     <p className="mt-3 text-sm">
                         We love to design amazing plumbing websites and build data-driven marketing plans proven to grow practices.
@@ -116,7 +118,7 @@ export default function HeroSection() {
                 </div>
 
                 {/* Feature 3 */}
-                <div className="bg-blue-800 rounded-lg p-6 shadow-lg text-center">
+                <div className="bg-blue-800 rounded-lg p-6 shadow-lg text-center text-white">
                     <h3 className="text-lg font-semibold">SEO & Online Advertising</h3>
                     <p className="mt-3 text-sm">
                         Together, we can engage a broader audience and educate your community on the importance of plumbing care.

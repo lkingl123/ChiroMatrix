@@ -1,5 +1,5 @@
 ﻿"use client";
-
+import { FaRegCalendarAlt } from "react-icons/fa";
 import { useState } from "react";
 
 export default function Header() {
@@ -179,10 +179,11 @@ export default function Header() {
 
                 {/* Call-to-Action Button */}
                 <a
-                    href="https://calendly.com/successloke/15min"
-                    className="hidden md:inline-block bg-blue-600 text-white text-lg font-bold px-6 py-3 rounded-lg shadow hover:bg-blue-700 transition duration-300"
+                    href="https://calendly.com/successplumbing/15min"
+                    className="hidden md:inline-flex items-center bg-blue-600 text-white text-lg font-bold px-6 py-3 rounded-lg shadow hover:bg-blue-700 transition duration-300 space-x-2"
                 >
-                    Book a Call
+                    <FaRegCalendarAlt className="inline-block" />
+                    <span>Book a Call</span>
                 </a>
             </div>
         </header>
