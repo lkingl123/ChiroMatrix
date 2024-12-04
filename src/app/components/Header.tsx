@@ -132,49 +132,6 @@ export default function Header() {
                             </div>
                         )}
                     </div>
-
-                    {/* Dropdown for RESOURCES */}
-                    {/* <div
-                        className="relative group"
-                        onMouseEnter={() => handleMouseEnter("resources")}
-                        onMouseLeave={handleMouseLeave}
-                    >
-                        <div className="flex items-center text-gray-700 hover:text-blue-600 transition duration-300 cursor-pointer font-semibold">
-                            RESOURCES
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                className="h-5 w-5 ml-2"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke="currentColor"
-                            >
-                                <path
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    strokeWidth={2}
-                                    d="M19 9l-7 7-7-7"
-                                />
-                            </svg>
-                        </div>
-                        {activeDropdown === "resources" && (
-                            <div
-                                className="absolute left-0 top-full mt-0 w-56 bg-white shadow-lg rounded-md z-10"
-                            >
-                                <a
-                                    href="/resources/blog"
-                                    className="block px-4 py-2 text-gray-700 hover:bg-blue-600 hover:text-white rounded-t-lg transition"
-                                >
-                                    Blog
-                                </a>
-                                <a
-                                    href="/resources/podcast"
-                                    className="block px-4 py-2 text-gray-700 hover:bg-blue-600 hover:text-white rounded-b-lg transition"
-                                >
-                                    Podcast
-                                </a>
-                            </div>
-                        )}
-                    </div> */}
                 </nav>
 
                 {/* Call-to-Action Button */}
