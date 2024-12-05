@@ -15,12 +15,12 @@
 }
 
 body {
-  font-family: "Honk", sans-serif;
+  font-family: "Inter", sans-serif; /* Use Inter as the global sans-serif font */
   color: var(--foreground);
   background: var(--background);
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Honk", serif;
+  font-family: "Inter", sans-serif; /* Use Inter for headings */
   font-weight: 700;
 }

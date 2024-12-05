@@ -9,7 +9,6 @@ export default {
   theme: {
     extend: {
       colors: {
-        // Custom colors from the palette
         lapis: "#2F6690", // Lapis Lazuli
         cerulean: "#3A7CA5", // Cerulean
         platinum: "#D9DCD6", // Platinum
@@ -17,8 +16,8 @@ export default {
         sky: "#81C3D7", // Sky Blue
       },
       fontFamily: {
-        sans: ["Honk", "ui-sans-serif", "system-ui"], // Use Honk for sans-serif globally
-        heading: ["Honk", "serif"], // Honk for headings as well
+        sans: ["Inter", "ui-sans-serif", "system-ui"], // Use Inter for sans-serif globally
+        heading: ["Inter", "serif"], // Use Inter for headings as well
       },
     },
   },

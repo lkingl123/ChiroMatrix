@@ -15,7 +15,7 @@ export default function Header() {
 
     return (
         <header className="bg-white shadow-md sticky top-0 z-50">
-            <div className="max-w-7xl mx-auto flex items-center justify-between py-1 px-6">
+            <div className="max-w-7xl mx-auto flex items-center justify-between py-4 px-6">
                 {/* Logo */}
                 <a href="/" className="flex items-center">
                     <img
@@ -26,11 +26,11 @@ export default function Header() {
                 </a>
 
                 {/* Navigation Links */}
-                <nav className="hidden md:flex space-x-8 text-lg font-medium">
+                <nav className="hidden md:flex space-x-8 text-lg font-heading">
                     {/* Static Link */}
                     <a
                         href="/who-we-are"
-                        className="text-gray-700 hover:text-blue-600 transition duration-300 font-semibold"
+                        className="text-gray-700 hover:text-lapis transition duration-300 font-semibold"
                     >
                         WHO WE ARE
                     </a>
@@ -41,11 +41,13 @@ export default function Header() {
                         onMouseEnter={() => handleMouseEnter("whatWeDo")}
                         onMouseLeave={handleMouseLeave}
                     >
-                        <div className="flex items-center text-gray-700 hover:text-blue-600 transition duration-300 cursor-pointer font-semibold">
+                        <div className="flex items-center text-gray-700 hover:text-lapis transition duration-300 cursor-pointer font-semibold">
                             WHAT WE DO
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
-                                className="h-5 w-5 ml-2"
+                                className={`h-5 w-5 ml-2 transform transition-transform duration-300 ${
+                                    activeDropdown === "whatWeDo" ? "rotate-0" : "rotate-180"
+                                }`}
                                 fill="none"
                                 viewBox="0 0 24 24"
                                 stroke="currentColor"
@@ -59,18 +61,16 @@ export default function Header() {
                             </svg>
                         </div>
                         {activeDropdown === "whatWeDo" && (
-                            <div
-                                className="absolute left-0 top-full mt-0 w-56 bg-white shadow-lg rounded-md z-10"
-                            >
+                            <div className="absolute left-0 top-full mt-0 w-56 bg-white shadow-lg rounded-md z-10">
                                 <a
                                     href="/what-we-do/new-practices"
-                                    className="block px-4 py-2 text-gray-700 hover:bg-blue-600 hover:text-white rounded-t-lg transition"
+                                    className="block px-4 py-2 text-gray-700 hover:bg-lapis hover:text-white rounded-t-lg transition"
                                 >
                                     For New Practices
                                 </a>
                                 <a
                                     href="/what-we-do/existing-practices"
-                                    className="block px-4 py-2 text-gray-700 hover:bg-blue-600 hover:text-white rounded-b-lg transition"
+                                    className="block px-4 py-2 text-gray-700 hover:bg-lapis hover:text-white rounded-b-lg transition"
                                 >
                                     For Existing Practices
                                 </a>
@@ -84,11 +84,13 @@ export default function Header() {
                         onMouseEnter={() => handleMouseEnter("servicesPrograms")}
                         onMouseLeave={handleMouseLeave}
                     >
-                        <div className="flex items-center text-gray-700 hover:text-blue-600 transition duration-300 cursor-pointer font-semibold">
+                        <div className="flex items-center text-gray-700 hover:text-lapis transition duration-300 cursor-pointer font-semibold">
                             SERVICES/PROGRAMS
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
-                                className="h-5 w-5 ml-2"
+                                className={`h-5 w-5 ml-2 transform transition-transform duration-300 ${
+                                    activeDropdown === "servicesPrograms" ? "rotate-0" : "rotate-180"
+                                }`}
                                 fill="none"
                                 viewBox="0 0 24 24"
                                 stroke="currentColor"
@@ -102,30 +104,28 @@ export default function Header() {
                             </svg>
                         </div>
                         {activeDropdown === "servicesPrograms" && (
-                            <div
-                                className="absolute left-0 top-full mt-0 w-64 bg-white shadow-lg rounded-md z-10"
-                            >
+                            <div className="absolute left-0 top-full mt-0 w-64 bg-white shadow-lg rounded-md z-10">
                                 <a
                                     href="/services-programs/branding"
-                                    className="block px-4 py-2 text-gray-700 hover:bg-blue-600 hover:text-white rounded-t-lg transition"
+                                    className="block px-4 py-2 text-gray-700 hover:bg-lapis hover:text-white rounded-t-lg transition"
                                 >
                                     Logo + Branding
                                 </a>
                                 <a
                                     href="/services-programs/web-design"
-                                    className="block px-4 py-2 text-gray-700 hover:bg-blue-600 hover:text-white transition"
+                                    className="block px-4 py-2 text-gray-700 hover:bg-lapis hover:text-white transition"
                                 >
                                     Web Design
                                 </a>
                                 <a
                                     href="/services-programs/seo"
-                                    className="block px-4 py-2 text-gray-700 hover:bg-blue-600 hover:text-white transition"
+                                    className="block px-4 py-2 text-gray-700 hover:bg-lapis hover:text-white transition"
                                 >
                                     SEO Services
                                 </a>
                                 <a
                                     href="/services-programs/social-media"
-                                    className="block px-4 py-2 text-gray-700 hover:bg-blue-600 hover:text-white rounded-b-lg transition"
+                                    className="block px-4 py-2 text-gray-700 hover:bg-lapis hover:text-white rounded-b-lg transition"
                                 >
                                     Social Media Management
                                 </a>
@@ -137,7 +137,7 @@ export default function Header() {
                 {/* Call-to-Action Button */}
                 <a
                     href="https://calendly.com/successplumbing/15min"
-                    className="hidden md:inline-flex items-center bg-blue-600 text-white text-lg font-bold px-6 py-3 rounded-lg shadow hover:bg-blue-700 transition duration-300 space-x-2"
+                    className="hidden md:inline-flex items-center bg-lapis text-white text-lg font-heading px-6 py-3 rounded-lg shadow-md hover:bg-cerulean transition duration-300 space-x-2"
                 >
                     <FaRegCalendarAlt className="inline-block" />
                     <span>Book a Call</span>

@@ -4,17 +4,19 @@ export default function WhoWeAre() {
   return (
     <div className="max-w-7xl mx-auto py-16 px-6">
       {/* Hero Section */}
-      <div className="text-center py-12 bg-blue-600 text-white rounded-md">
-        <h1 className="text-4xl font-bold mb-4">Your Business, Unclogged</h1>
-        <p className="text-lg">From faucets to websites, we ensure everything runs smoothly.</p>
+      <div className="text-center py-16 bg-gradient-to-r from-lapis to-cerulean text-white rounded-md shadow-lg">
+        <h1 className="text-5xl font-extrabold mb-4">Your Business, Unclogged</h1>
+        <p className="text-xl font-light">
+          From faucets to websites, we ensure everything runs smoothly.
+        </p>
       </div>
 
       {/* Mission and Vision Section */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 py-16">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 py-16">
         {/* Mission */}
-        <div className="bg-white shadow-lg rounded-lg p-8">
-          <h2 className="text-3xl font-bold text-gray-800 mb-4">Our Mission</h2>
-          <p className="text-gray-700">
+        <div className="bg-white shadow-md rounded-lg p-8 hover:shadow-xl transition-shadow duration-300">
+          <h2 className="text-4xl font-bold text-lapis mb-4">Our Mission</h2>
+          <p className="text-gray-700 leading-relaxed">
             Our mission is to empower plumbing businesses with tailored websites,
             branding, and content solutions. We aim to elevate plumbing professionals
             by providing modern, responsive designs and impactful digital marketing
@@ -23,9 +25,9 @@ export default function WhoWeAre() {
         </div>
 
         {/* Vision */}
-        <div className="bg-blue-600 text-white p-6 rounded-md">
-          <h2 className="text-3xl font-bold mb-4">Our Vision</h2>
-          <p>
+        <div className="bg-gradient-to-br from-lapis to-cerulean text-white p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+          <h2 className="text-4xl font-bold mb-4">Our Vision</h2>
+          <p className="leading-relaxed">
             We envision a world where plumbing businesses are recognized for their expertise
             and professionalism. By bridging the gap between plumbers and their clients
             through exceptional online experiences, we aim to redefine the standards of
@@ -34,29 +36,33 @@ export default function WhoWeAre() {
         </div>
       </div>
 
+
+
       {/* Team Section */}
       <div className="mt-16">
-        <h2 className="text-3xl font-bold text-center text-gray-800 mb-8">Our Team</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <h2 className="text-4xl font-bold text-center text-gray-800 mb-12">Meet Our Team</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12">
           {/* Team Member Animation */}
           {Array.from({ length: 6 }).map((_, index) => (
             <div
               key={index}
-              className="flex flex-col items-center opacity-0"
+              className="flex flex-col items-center opacity-0 transform scale-95"
               style={{
-                animation: `fadeIn 1s ease-in-out ${index * 0.6}s forwards`,
+                animation: `fadeInUp 0.8s ease-in-out ${index * 0.8}s forwards`,
               }}
             >
               <img
                 src={`/team-member${index + 1}.jpg`}
                 alt={`Team Member ${index + 1}`}
-                className="w-40 h-40 rounded-full object-cover"
+                className="w-40 h-40 rounded-full object-cover shadow-md"
               />
-              <h3 className="mt-4 text-lg font-semibold text-gray-800">[Team Member {index + 1}]</h3>
+              <h3 className="mt-6 text-xl font-semibold text-gray-800">
+                Team Member {index + 1}
+              </h3>
               <p className="text-gray-600">Role</p>
               <a
                 href="mailto:example@example.com"
-                className="mt-2 text-blue-400 hover:underline"
+                className="mt-2 text-blue-600 hover:underline"
               >
                 Email
               </a>
@@ -67,10 +73,10 @@ export default function WhoWeAre() {
 
       {/* Inline Styles for Animations */}
       <style jsx>{`
-        @keyframes fadeIn {
+        @keyframes fadeInUp {
           from {
             opacity: 0;
-            transform: translateY(20px);
+            transform: translateY(30px);
           }
           to {
             opacity: 1;
