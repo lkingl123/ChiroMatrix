@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useRef, useEffect } from "react";
+import { FaCommentAlt, FaTimes } from "react-icons/fa";
 
 const ChatBot = () => {
   const [messages, setMessages] = useState<{ role: string; content: string }[]>([
@@ -13,9 +14,9 @@ const ChatBot = () => {
   const [input, setInput] = useState("");
   const [isOpen, setIsOpen] = useState(false);
   const [isTyping, setIsTyping] = useState(false);
+  const [showTooltip, setShowTooltip] = useState(true); // Show tooltip initially
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
-  // Scroll to the most recent message
   const scrollToBottom = () => {
     if (messagesEndRef.current) {
       messagesEndRef.current.scrollIntoView({ behavior: "smooth" });
@@ -28,29 +29,27 @@ const ChatBot = () => {
 
   const handleSendMessage = async () => {
     if (!input.trim()) return;
-  
+
     const userMessage = { role: "user", content: input };
     setInput(""); // Clear input field immediately after sending
     setMessages((prev) => [...prev, userMessage]);
-  
+
     // Simulate bot typing
     setIsTyping(true);
-  
+
     try {
       const response = await fetch("/api/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ message: input }),
       });
-  
+
       const data = await response.json();
       const replyLength = data.reply.length;
-  
-      // Calculate delay dynamically based on message length
+
       const typingDelay = Math.min(Math.max(replyLength / 10, 1000), 3000);
-  
+
       setTimeout(() => {
-        // Directly add the full response
         setMessages((prev) => [
           ...prev,
           { role: "bot", content: data.reply },
@@ -63,58 +62,29 @@ const ChatBot = () => {
     }
   };
 
-  // const playClickSound = () => {
-  //   const audio = new Audio("/audio/click.mp3");
-  //   audio.play();
-  // };
+  const handleTooltipClick = () => {
+    setShowTooltip(false); // Hide tooltip when clicked
+    setIsOpen(true); // Open the chat window
+  };
 
   return (
     <div className="fixed bottom-4 right-4 flex flex-col items-end">
-      {/* Inline Styles */}
-      <style>{`
-        .typing-dots {
-          display: inline-flex;
-          align-items: center;
-          justify-content: center;
-          gap: 2px;
-        }
-        .typing-dots span {
-          width: 6px;
-          height: 6px;
-          background-color: #6b7280;
-          border-radius: 50%;
-          animation: typing 1.5s infinite;
-        }
-        .typing-dots span:nth-child(1) {
-          animation-delay: 0s;
-        }
-        .typing-dots span:nth-child(2) {
-          animation-delay: 0.2s;
-        }
-        .typing-dots span:nth-child(3) {
-          animation-delay: 0.4s;
-        }
-        @keyframes typing {
-          0%, 20% {
-            opacity: 0.3;
-            transform: scale(0.8);
-          }
-          50% {
-            opacity: 1;
-            transform: scale(1);
-          }
-          100% {
-            opacity: 0.3;
-            transform: scale(0.8);
-          }
-        }
-      `}</style>
+      {/* Tooltip */}
+      {!isOpen && showTooltip && (
+        <button
+          onClick={handleTooltipClick}
+          className="relative mb-2 px-4 py-2 bg-blue-500 text-white rounded-full shadow-lg text-sm flex items-center space-x-2 animate-bounce hover:bg-blue-600 transition duration-300"
+        >
+          <FaCommentAlt className="w-4 h-4" />
+          <span>Try me!</span>
+        </button>
+      )}
 
       {/* Toggle Button */}
       <button
         onClick={() => {
           setIsOpen(!isOpen);
-          // playClickSound();
+          setShowTooltip(false); // Hide tooltip when chat opens
         }}
         className="w-14 h-14 rounded-full bg-blue-500 hover:bg-blue-600 text-white shadow-lg flex items-center justify-center transition-transform transform hover:scale-110"
         title={isOpen ? "Close Chat" : "Open Chat"}
@@ -138,13 +108,10 @@ const ChatBot = () => {
         <div className="bg-blue-500 text-white p-3 font-bold flex items-center justify-between rounded-t-lg shadow-md">
           <span> 💬 AI Assistant</span>
           <button
-            onClick={() => {
-              setIsOpen(false);
-              // playClickSound();
-            }}
+            onClick={() => setIsOpen(false)}
             className="text-white hover:text-gray-200"
           >
-            ✖
+            <FaTimes />
           </button>
         </div>
 
