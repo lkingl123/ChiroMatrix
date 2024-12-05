@@ -40,24 +40,24 @@ export default function HeroSection() {
             }}
         >
             {/* Dark Overlay */}
-            <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+            <div className="absolute inset-0 bg-black bg-opacity-60"></div>
 
             {/* Hero Content */}
             <div className="relative max-w-4xl mx-auto text-center px-4">
                 {/* Main Heading */}
-                <h1 className="text-5xl font-extrabold tracking-tight leading-tight bg-transparent">
+                <h1 className="text-5xl font-heading font-extrabold tracking-tight leading-tight text-platinum">
                     Plumbing Solutions Made Easy
                 </h1>
 
                 {/* Subtext */}
-                <p className="mt-6 text-lg font-light leading-relaxed bg-transparent">
+                <p className="mt-6 text-lg font-light leading-relaxed text-platinum">
                     Partner with the team for Plumbing Websites, Plumbing Marketing Tools, and Strategic Consulting.
                     <br />
                     We brand the future of plumbing.
                 </p>
 
                 {/* Call-to-Action Form */}
-                <div className="mt-8 bg-white bg-opacity-90 rounded-lg shadow-md p-6 max-w-lg mx-auto text-gray-800 relative">
+                <div className="mt-8 bg-platinum bg-opacity-95 rounded-lg shadow-xl p-6 max-w-lg mx-auto text-gray-800">
                     <form className="flex flex-col gap-4" onSubmit={handleSubmit}>
                         <input
                             type="text"
@@ -65,7 +65,7 @@ export default function HeroSection() {
                             placeholder="Full Name"
                             value={formData.name}
                             onChange={handleChange}
-                            className="flex-1 px-4 py-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                            className="px-4 py-3 border border-lapis rounded-md focus:outline-none focus:ring-2 focus:ring-cerulean text-gray-900"
                             required
                         />
                         <input
@@ -74,12 +74,12 @@ export default function HeroSection() {
                             placeholder="Email"
                             value={formData.email}
                             onChange={handleChange}
-                            className="flex-1 px-4 py-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                            className="px-4 py-3 border border-lapis rounded-md focus:outline-none focus:ring-2 focus:ring-cerulean text-gray-900"
                             required
                         />
                         <button
                             type="submit"
-                            className="w-full bg-blue-600 text-white font-medium py-3 rounded-lg hover:bg-blue-700 transition duration-300 text-center"
+                            className="w-full bg-lapis text-platinum font-semibold py-3 rounded-md hover:bg-cerulean transition duration-300 text-center"
                         >
                             Request a Demo
                         </button>
@@ -89,47 +89,46 @@ export default function HeroSection() {
 
             {/* Features Section */}
             <div className="mt-16 grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-5xl mx-auto px-4 relative">
-                {/* Feature 1 */}
-                <div className="bg-blue-800 rounded-lg p-6 shadow-lg text-center text-white bg-lapis">
-                    <h3 className="text-lg font-semibold">Logo Design</h3>
-                    <p className="mt-3 text-sm">
-                        Your journey begins with branding and quickly becomes a matter of optimizing content and storytelling.
-                    </p>
-                    <a
-                        href="/services-programs/branding"
-                        className="mt-4 inline-block text-blue-400 hover:underline text-sm font-medium"
+                {/* Feature Cards */}
+                {[
+                    {
+                        title: "Logo Design",
+                        description:
+                            "Your journey begins with branding and quickly becomes a matter of optimizing content and storytelling.",
+                        linkText: "200+ Plumbing Logos ?",
+                        link: "/services-programs/branding",
+                    },
+                    {
+                        title: "Website Design & Hosting",
+                        description:
+                            "We design amazing plumbing websites and build data-driven marketing plans proven to grow practices.",
+                        linkText: "200+ Plumbing Websites ?",
+                        link: "/services-programs/web-design",
+                    },
+                    {
+                        title: "SEO & Online Advertising",
+                        description:
+                            "Together, we can engage a broader audience and educate your community on the importance of plumbing care.",
+                        linkText: "2x Your Customer Reach ?",
+                        link: "/services-programs/seo",
+                    },
+                ].map((feature, index) => (
+                    <div
+                        key={index}
+                        className="bg-lapis rounded-lg p-6 shadow-lg text-center text-white hover:bg-cerulean transition-transform transform hover:scale-105"
                     >
-                        200+ Plumbing Logos ?
-                    </a>
-                </div>
-
-                {/* Feature 2 */}
-                <div className="bg-blue-800 rounded-lg p-6 shadow-lg text-center text-white bg-lapis">
-                    <h3 className="text-lg font-semibold">Website Design & Hosting</h3>
-                    <p className="mt-3 text-sm">
-                        We love to design amazing plumbing websites and build data-driven marketing plans proven to grow practices.
-                    </p>
-                    <a
-                        href="/services-programs/web-design"
-                        className="mt-4 inline-block text-blue-400 hover:underline text-sm font-medium"
-                    >
-                        200+ Plumbing Websites ?
-                    </a>
-                </div>
-
-                {/* Feature 3 */}
-                <div className="bg-blue-800 rounded-lg p-6 shadow-lg text-center text-white bg-lapis">
-                    <h3 className="text-lg font-semibold">SEO & Online Advertising</h3>
-                    <p className="mt-3 text-sm">
-                        Together, we can engage a broader audience and educate your community on the importance of plumbing care.
-                    </p>
-                    <a
-                        href="/services-programs/seo"
-                        className="mt-4 inline-block text-blue-400 hover:underline text-sm font-medium"
-                    >
-                        2x Your Customer Reach ?
-                    </a>
-                </div>
+                        <h3 className="text-lg font-semibold text-platinum">
+                            {feature.title}
+                        </h3>
+                        <p className="mt-3 text-sm text-sky">{feature.description}</p>
+                        <a
+                            href={feature.link}
+                            className="mt-4 inline-block text-platinum hover:underline text-sm font-medium"
+                        >
+                            {feature.linkText}
+                        </a>
+                    </div>
+                ))}
             </div>
         </section>
     );
