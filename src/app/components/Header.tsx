@@ -1,9 +1,10 @@
 ﻿"use client";
-import { FaRegCalendarAlt } from "react-icons/fa";
+import { FaRegCalendarAlt, FaBars, FaTimes } from "react-icons/fa";
 import { useState } from "react";
 
 export default function Header() {
     const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
+    const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
     const handleMouseEnter = (menu: string) => {
         setActiveDropdown(menu);
@@ -11,6 +12,10 @@ export default function Header() {
 
     const handleMouseLeave = () => {
         setActiveDropdown(null);
+    };
+
+    const toggleMobileMenu = () => {
+        setMobileMenuOpen((prev) => !prev);
     };
 
     return (
@@ -25,9 +30,8 @@ export default function Header() {
                     />
                 </a>
 
-                {/* Navigation Links */}
+                {/* Desktop Navigation */}
                 <nav className="hidden md:flex space-x-8 text-lg font-heading">
-                    {/* Static Link */}
                     <a
                         href="/who-we-are"
                         className="text-gray-700 hover:text-lapis transition duration-300 font-semibold"
@@ -35,7 +39,6 @@ export default function Header() {
                         WHO WE ARE
                     </a>
 
-                    {/* Dropdown for WHAT WE DO */}
                     <div
                         className="relative group"
                         onMouseEnter={() => handleMouseEnter("whatWeDo")}
@@ -78,7 +81,6 @@ export default function Header() {
                         )}
                     </div>
 
-                    {/* Dropdown for SERVICES/PROGRAMS */}
                     <div
                         className="relative group"
                         onMouseEnter={() => handleMouseEnter("servicesPrograms")}
@@ -142,7 +144,49 @@ export default function Header() {
                     <FaRegCalendarAlt className="inline-block" />
                     <span>Book a Call</span>
                 </a>
+
+                {/* Mobile Hamburger Menu */}
+                <button
+                    className="md:hidden text-gray-700 text-2xl"
+                    onClick={toggleMobileMenu}
+                    aria-label="Toggle Menu"
+                >
+                    {isMobileMenuOpen ? <FaTimes /> : <FaBars />}
+                </button>
             </div>
+
+            {/* Mobile Navigation Menu */}
+            {isMobileMenuOpen && (
+                <div className="bg-white shadow-lg md:hidden">
+                    <nav className="flex flex-col space-y-2 py-4 px-6 text-lg font-heading text-gray-700">
+                        <a
+                            href="/who-we-are"
+                            className="hover:text-lapis transition duration-300 font-semibold"
+                        >
+                            WHO WE ARE
+                        </a>
+                        <a
+                            href="/what-we-do"
+                            className="hover:text-lapis transition duration-300 font-semibold"
+                        >
+                            WHAT WE DO
+                        </a>
+                        <a
+                            href="/services-programs"
+                            className="hover:text-lapis transition duration-300 font-semibold"
+                        >
+                            SERVICES/PROGRAMS
+                        </a>
+                        <a
+                            href="https://calendly.com/successplumbing/15min"
+                            className="mt-4 inline-flex items-center justify-center bg-lapis text-white text-lg font-heading px-6 py-3 rounded-lg shadow-md hover:bg-cerulean transition duration-300"
+                        >
+                            <FaRegCalendarAlt className="inline-block" />
+                            <span>Book a Call</span>
+                        </a>
+                    </nav>
+                </div>
+            )}
         </header>
     );
 }

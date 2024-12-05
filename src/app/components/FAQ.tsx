@@ -9,7 +9,7 @@ const FAQ = () => {
     {
       question: "What services do you offer for plumbers?",
       answer:
-        "We specialize in creating professional websites tailored for plumbing businesses. Our services include website design, development, SEO optimization, and online marketing strategies to help plumbers grow their businesses.",
+        "We specialize in creating professional websites tailored for plumbing businesses. Our services include website design, development, SEO optimization, and online marketing strategies.",
     },
     {
       question: "How long does it take to create a website?",

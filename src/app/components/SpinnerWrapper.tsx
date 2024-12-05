@@ -99,7 +99,7 @@ export default function SpinnerWrapper({ children }: { children: React.ReactNode
         .loader {
             width: 50px;
             height: 50px;
-            background-color: #3498db;
+            background-color: #2F6690;
             animation: spinPlane 1.2s infinite ease-in-out;
         }
 
