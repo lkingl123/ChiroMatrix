@@ -47,7 +47,7 @@ export default function Footer() {
           <ul className="space-y-2">
             <li>
               <a
-                href="/services-programs/logo-branding"
+                href="/services-programs/branding"
                 className="text-blue-400 hover:underline"
               >
                 Plumbing Logos and Branding
@@ -55,28 +55,14 @@ export default function Footer() {
             </li>
             <li>
               <a
-                href="/services-programs/website-design"
+                href="/services-programs/web-design"
                 className="text-blue-400 hover:underline"
               >
                 Plumbing Website Design
               </a>
             </li>
-            <li>
-              <a
-                href="/services-programs/marketing"
-                className="text-blue-400 hover:underline"
-              >
-                Plumbing Marketing
-              </a>
-            </li>
-            <li>
-              <a
-                href="/services-programs/advertising"
-                className="text-blue-400 hover:underline"
-              >
-                Plumbing Advertising
-              </a>
-            </li>
+            
+        
             <li>
               <a
                 href="/services-programs/seo"

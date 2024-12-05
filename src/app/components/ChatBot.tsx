@@ -63,10 +63,10 @@ const ChatBot = () => {
     }
   };
 
-  const playClickSound = () => {
-    const audio = new Audio("/audio/click.mp3");
-    audio.play();
-  };
+  // const playClickSound = () => {
+  //   const audio = new Audio("/audio/click.mp3");
+  //   audio.play();
+  // };
 
   return (
     <div className="fixed bottom-4 right-4 flex flex-col items-end">
@@ -114,7 +114,7 @@ const ChatBot = () => {
       <button
         onClick={() => {
           setIsOpen(!isOpen);
-          playClickSound();
+          // playClickSound();
         }}
         className="w-14 h-14 rounded-full bg-blue-500 hover:bg-blue-600 text-white shadow-lg flex items-center justify-center transition-transform transform hover:scale-110"
         title={isOpen ? "Close Chat" : "Open Chat"}
@@ -140,7 +140,7 @@ const ChatBot = () => {
           <button
             onClick={() => {
               setIsOpen(false);
-              playClickSound();
+              // playClickSound();
             }}
             className="text-white hover:text-gray-200"
           >
