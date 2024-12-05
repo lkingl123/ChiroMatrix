@@ -79,7 +79,7 @@ export default function HeroSection() {
                         />
                         <button
                             type="submit"
-                            className="w-full bg-lapis text-platinum font-semibold py-3 rounded-md hover:bg-cerulean transition duration-300 text-center"
+                            className="w-full bg-lapis text-white font-semibold py-3 rounded-md hover:bg-cerulean transition duration-300 text-center"
                         >
                             Request a Demo
                         </button>
