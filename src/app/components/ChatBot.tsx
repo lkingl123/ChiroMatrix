@@ -94,16 +94,17 @@ const ChatBot = () => {
 
       {/* Chat Window */}
       <div
-        className={`bg-white w-[400px] h-[600px] shadow-xl rounded-lg mt-4 flex flex-col border border-gray-300 overflow-hidden transform transition-transform duration-300 ease-in-out ${
-          isOpen ? "scale-100 opacity-100" : "scale-0 opacity-0"
-        }`}
-        style={{
-          transformOrigin: "bottom right",
-          position: "absolute",
-          bottom: "72px",
-          right: "0px",
-        }}
-      >
+  className={`bg-white w-[300px] h-[400px] sm:w-[350px] sm:h-[500px] shadow-xl rounded-lg mt-4 flex flex-col border border-gray-300 overflow-hidden transform transition-transform duration-300 ease-in-out ${
+    isOpen ? "scale-100 opacity-100" : "scale-0 opacity-0"
+  }`}
+  style={{
+    transformOrigin: "bottom right",
+    position: "absolute",
+    bottom: "72px",
+    right: "16px", // Adjusted for smaller width
+  }}
+>
+
         {/* Header */}
         <div className="bg-blue-500 text-white p-3 font-bold flex items-center justify-between rounded-t-lg shadow-md">
           <span> 💬 AI Assistant</span>
