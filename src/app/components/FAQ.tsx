@@ -73,7 +73,7 @@ const FAQ = () => {
               <div
                 className={`transition-all duration-300 ease-in-out ${
                   openIndex === index ? "max-h-40 p-4" : "max-h-0"
-                } overflow-hidden bg-gray-50 text-gray-700`}
+                } overflow-hidden bg-gray-50 text-gray-500`}
               >
                 {openIndex === index && <p>{faq.answer}</p>}
               </div>
