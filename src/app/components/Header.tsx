@@ -12,7 +12,7 @@ export default function Header() {
 
     return (
         <header className="bg-white shadow-md sticky top-0 z-50">
-            <div className="max-w-7xl mx-auto flex items-center justify-between py-655 px-6">
+            <div className="max-w-7xl mx-auto flex items-center justify-between py-6 px-6">
                 {/* Logo */}
                 <a href="/" className="flex items-center">
                     <img
