@@ -12,17 +12,20 @@ export default function Header() {
 
     return (
         <header className="bg-white shadow-md sticky top-0 z-50">
-            <div className="max-w-7xl mx-auto flex items-center justify-between py-6 px-6">
-                {/* Logo */}
-                <a href="/" className="flex items-center">
-                    <img
-                        src="/logo-bg.png"
-                        alt="chiropractic Logo"
-                        className="absolute w-[240px] h-[240px] object-contain"
-                    />
-                </a>
+<div className="max-w-7xl mx-auto flex items-center justify-between py-0 px-4 md:px-6">
+    {/* Logo */}
+    <a href="/" className="flex-shrink-0 leading-none m-0">
+        <img
+            src="/logo-bg.png"
+            alt="chiropractic Logo"
+            className="max-w-[220px] max-h-[220px] object-contain"
+        />
+    </a>
 
-                {/* Desktop Navigation */}
+
+    {/* Desktop Navigation */}
+
+
                 <nav className="hidden md:flex space-x-8 text-lg font-heading">
                     <a
                         href="/who-we-are"
@@ -132,7 +135,7 @@ export default function Header() {
 
                 {/* Call-to-Action Button */}
                 <a
-                    href="https://calendly.com/successplumbing/15min"
+                    href="https://calendly.com/chiromatrix/15min"
                     className="hidden md:inline-flex items-center bg-lapis text-white text-lg font-heading px-6 py-3 rounded-lg shadow-md hover:bg-cerulean transition duration-300 space-x-2"
                 >
                     <FaRegCalendarAlt className="inline-block" />

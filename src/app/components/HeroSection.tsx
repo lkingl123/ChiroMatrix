@@ -45,15 +45,15 @@ export default function HeroSection() {
             {/* Hero Content */}
             <div className="relative max-w-4xl mx-auto text-center px-4">
                 {/* Main Heading */}
-                <h1 className="text-5xl font-heading font-extrabold tracking-tight leading-tight text-platinum">
-                    Plumbing Solutions Made Easy
+                <h1 className="text-5xl font-heading font-extrabold tracking-tight leading-tight text-white">
+                Strengthen Your Digital Backbone Today
                 </h1>
 
                 {/* Subtext */}
-                <p className="mt-6 text-lg font-light leading-relaxed text-platinum">
-                    Partner with the team for Plumbing Websites, Plumbing Marketing Tools, and Strategic Consulting.
+                <p className="mt-6 text-lg font-light leading-relaxed text-white">
+                    Empower your practice with Chiropractic Websites, Marketing Tools, and Patient Engagement Strategies.
                     <br />
-                    We brand the future of plumbing.
+                    Let us elevate your chiropractic business.
                 </p>
 
                 {/* Call-to-Action Form */}
@@ -94,22 +94,22 @@ export default function HeroSection() {
                     {
                         title: "Logo Design",
                         description:
-                            "Your journey begins with branding and quickly becomes a matter of optimizing content and storytelling.",
-                        linkText: "200+ Plumbing Logos ?",
+                            "Start with branding and create a strong visual identity to attract and retain patients.",
+                        linkText: "200+ Chiropractic Logos ?",
                         link: "/services-programs/branding",
                     },
                     {
                         title: "Website Design & Hosting",
                         description:
-                            "We design amazing plumbing websites and build data-driven marketing plans proven to grow practices.",
-                        linkText: "200+ Plumbing Websites ?",
+                            "We create stunning chiropractic websites and craft marketing strategies to grow your practice.",
+                        linkText: "200+ Chiropractic Websites ?",
                         link: "/services-programs/web-design",
                     },
                     {
                         title: "SEO & Online Advertising",
                         description:
-                            "Together, we can engage a broader audience and educate your community on the importance of plumbing care.",
-                        linkText: "2x Your Customer Reach ?",
+                            "Reach more patients and educate your community with targeted online marketing strategies.",
+                        linkText: "2x Your Patient Reach ?",
                         link: "/services-programs/seo",
                     },
                 ].map((feature, index) => (
@@ -117,13 +117,13 @@ export default function HeroSection() {
                         key={index}
                         className="bg-lapis rounded-lg p-6 shadow-lg text-center text-white hover:bg-cerulean transition-transform transform hover:scale-105"
                     >
-                        <h3 className="text-lg font-semibold text-platinum">
+                        <h3 className="text-lg font-semibold text-white">
                             {feature.title}
                         </h3>
                         <p className="mt-3 text-sm text-sky">{feature.description}</p>
                         <a
                             href={feature.link}
-                            className="mt-4 inline-block text-platinum hover:underline text-sm font-medium"
+                            className="mt-4 inline-block text-white hover:underline text-sm font-medium"
                         >
                             {feature.linkText}
                         </a>

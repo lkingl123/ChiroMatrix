@@ -8,15 +8,15 @@ export default function Footer() {
         {/* Contact Information */}
         <div>
           <h3 className="text-lg font-bold mb-4">Contact Information</h3>
-          <p>Plumbing Websites, LLC</p>
-          <p>123 Waterway Lane</p>
-          <p>Suite A #123</p>
+          <p>Chiropractic Websites, LLC</p>
+          <p>123 Wellness Lane</p>
+          <p>Suite B #456</p>
           <p>City, State ZIP</p>
           <p className="mt-2">
             Phone:{" "}
             <a
               href="tel:+1234567890"
-              className="text-blue-400 hover:underline flex items-center gap-2"
+              className="text-cerulean hover:underline flex items-center gap-2"
             >
               <FiPhone className="inline-block" /> (123) 456-7890
             </a>
@@ -24,19 +24,19 @@ export default function Footer() {
           <p>
             Email:{" "}
             <a
-              href="mailto:info@plumbingwebsites.com"
-              className="text-blue-400 hover:underline"
+              href="mailto:info@chiropracticwebsites.com"
+              className="text-cerulean hover:underline"
             >
-              info@plumbingwebsites.com
+              info@chiropracticwebsites.com
             </a>
           </p>
           <p>
             Web:{" "}
             <a
-              href="https://www.plumbingwebsites.com"
-              className="text-blue-400 hover:underline"
+              href="https://www.chiropracticwebsites.com"
+              className="text-cerulean hover:underline"
             >
-              www.plumbingwebsites.com
+              www.chiropracticwebsites.com
             </a>
           </p>
         </div>
@@ -48,35 +48,33 @@ export default function Footer() {
             <li>
               <a
                 href="/services-programs/branding"
-                className="text-blue-400 hover:underline"
+                className="text-cerulean hover:underline"
               >
-                Plumbing Logos and Branding
+                Chiropractic Logos and Branding
               </a>
             </li>
             <li>
               <a
                 href="/services-programs/web-design"
-                className="text-blue-400 hover:underline"
+                className="text-cerulean hover:underline"
               >
-                Plumbing Website Design
+                Chiropractic Website Design
               </a>
             </li>
-            
-        
             <li>
               <a
                 href="/services-programs/seo"
-                className="text-blue-400 hover:underline"
+                className="text-cerulean hover:underline"
               >
-                Plumbing SEO
+                Chiropractic SEO
               </a>
             </li>
             <li>
               <a
                 href="/services-programs/social-media"
-                className="text-blue-400 hover:underline"
+                className="text-cerulean hover:underline"
               >
-                Plumbing Social Media
+                Chiropractic Social Media
               </a>
             </li>
           </ul>
@@ -88,23 +86,23 @@ export default function Footer() {
           <p>
             Email:{" "}
             <a
-              href="mailto:support@plumbingwebsites.com"
-              className="text-blue-400 hover:underline"
+              href="mailto:support@chiropracticwebsites.com"
+              className="text-cerulean hover:underline"
             >
-              support@plumbingwebsites.com
+              support@chiropracticwebsites.com
             </a>
           </p>
           <p>Mon-Fri: 9:00 AM – 6:00 PM</p>
           <p className="mt-2">
             <a
               href="tel:+1234567890"
-              className="flex items-center gap-2 text-blue-400 hover:underline"
+              className="flex items-center gap-2 text-cerulean hover:underline"
             >
               <FiPhone className="inline-block" /> (123) 456-7890
             </a>
           </p>
           <p className="mt-4">
-            <a href="/terms" className="text-blue-400 hover:underline">
+            <a href="/terms" className="text-cerulean hover:underline">
               Terms of Service
             </a>
           </p>
@@ -127,7 +125,7 @@ export default function Footer() {
         </div>
 
         <p className="mt-4 text-center text-gray-400 text-sm">
-          &copy; 2024 Plumbing Websites | Privacy Policy
+          &copy; 2024 Chiropractic Websites | Privacy Policy
         </p>
       </div>
     </footer>

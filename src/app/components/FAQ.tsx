@@ -7,19 +7,19 @@ const FAQ = () => {
 
   const faqs = [
     {
-      question: "What services do you offer for plumbers?",
+      question: "What services do you offer for chiropractors?",
       answer:
-        "We specialize in creating professional websites tailored for plumbing businesses. Our services include website design, development, SEO optimization, and online marketing strategies.",
+        "We specialize in creating professional websites tailored for chiropractic practices. Our services include website design, development, SEO optimization, and online marketing strategies.",
     },
     {
       question: "How long does it take to create a website?",
       answer:
-        "On average, it takes 2-4 weeks to create a fully customized website for your plumbing business, depending on the complexity of your requirements.",
+        "On average, it takes 2-4 weeks to create a fully customized website for your chiropractic practice, depending on the complexity of your requirements.",
     },
     {
-      question: "Can you help with marketing my plumbing business?",
+      question: "Can you help with marketing my chiropractic practice?",
       answer:
-        "Absolutely! We provide digital marketing services including local SEO, Google Ads management, and social media marketing to help your plumbing business attract more customers.",
+        "Absolutely! We provide digital marketing services including local SEO, Google Ads management, and social media marketing to help your chiropractic practice attract more patients.",
     },
     {
       question: "Do I need to provide content for my website?",
@@ -34,7 +34,7 @@ const FAQ = () => {
     {
       question: "What happens after the website is launched?",
       answer:
-        "We offer ongoing support, including website maintenance, updates, and additional marketing services to keep your business growing and your website running smoothly.",
+        "We offer ongoing support, including website maintenance, updates, and additional marketing services to keep your chiropractic practice growing and your website running smoothly.",
     },
   ];
 
@@ -47,7 +47,7 @@ const FAQ = () => {
       <div className="container mx-auto px-6 max-w-4xl">
         <h2 className="text-3xl font-bold text-center mb-4">Frequently Asked Questions</h2>
         <p className="text-center text-gray-600 mb-8">
-          Learn more about our website creation and marketing services for plumbers.
+          Learn more about our website creation and marketing services for chiropractors.
         </p>
         <div className="space-y-4">
           {faqs.map((faq, index) => (
