@@ -12,13 +12,13 @@ export default function Header() {
 
     return (
         <header className="bg-white shadow-md sticky top-0 z-50">
-            <div className="max-w-7xl mx-auto flex items-center justify-between py-4 px-6">
+            <div className="max-w-7xl mx-auto flex items-center justify-between py-655 px-6">
                 {/* Logo */}
                 <a href="/" className="flex items-center">
                     <img
-                        src="/logo.svg"
-                        alt="Plumbing Logo"
-                        className="w-[100px] h-[100px] object-contain"
+                        src="/logo-bg.png"
+                        alt="chiropractic Logo"
+                        className="absolute w-[240px] h-[240px] object-contain"
                     />
                 </a>
 
