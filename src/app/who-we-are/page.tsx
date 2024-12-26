@@ -5,9 +5,9 @@ export default function WhoWeAre() {
     <div className="max-w-7xl mx-auto py-16 px-6">
       {/* Hero Section */}
       <div className="text-center py-16 bg-gradient-to-r from-lapis to-cerulean text-white rounded-md shadow-lg">
-        <h1 className="text-5xl font-extrabold mb-4">Your Business, Unclogged</h1>
+        <h1 className="text-5xl font-extrabold mb-4">Your Chiropractic Practice, Reimagined</h1>
         <p className="text-xl font-light">
-          From faucets to websites, we ensure everything runs smoothly.
+        From spinal health to digital presence, we ensure your practice thrives online.
         </p>
       </div>
 
@@ -17,10 +17,10 @@ export default function WhoWeAre() {
         <div className="bg-white shadow-md rounded-lg p-8 hover:shadow-xl transition-shadow duration-300">
           <h2 className="text-4xl font-bold text-lapis mb-4">Our Mission</h2>
           <p className="text-gray-700 leading-relaxed">
-            Our mission is to empower plumbing businesses with tailored websites,
-            branding, and content solutions. We aim to elevate plumbing professionals
-            by providing modern, responsive designs and impactful digital marketing
-            strategies.
+          Our mission is to empower chiropractic practices with customized websites,
+            branding, and digital marketing strategies. We help you connect with your
+            patients by providing modern, responsive designs and effective marketing
+            solutions tailored to your chiropractic practice.
           </p>
         </div>
 
@@ -28,10 +28,10 @@ export default function WhoWeAre() {
         <div className="bg-gradient-to-br from-lapis to-cerulean text-white p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
           <h2 className="text-4xl font-bold mb-4">Our Vision</h2>
           <p className="leading-relaxed">
-            We envision a world where plumbing businesses are recognized for their expertise
-            and professionalism. By bridging the gap between plumbers and their clients
-            through exceptional online experiences, we aim to redefine the standards of
-            the plumbing industry in the digital space.
+          We envision a world where chiropractic practices are recognized for their
+            healing touch and professionalism. By bridging the gap between chiropractors
+            and their patients through exceptional online experiences, we aim to
+            revolutionize the standards of the chiropractic industry in the digital space.
           </p>
         </div>
       </div>
