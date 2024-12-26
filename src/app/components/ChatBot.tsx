@@ -73,7 +73,7 @@ const ChatBot = () => {
       {!isOpen && showTooltip && (
         <button
           onClick={handleTooltipClick}
-          className="relative mb-2 px-4 py-2 bg-blue-500 text-white rounded-full shadow-lg text-sm flex items-center space-x-2 animate-bounce hover:bg-blue-600 transition duration-300"
+          className="relative mb-2 px-4 py-2 bg-lapis text-white rounded-full shadow-lg text-sm flex items-center space-x-2 animate-bounce hover:bg-blue-600 transition duration-300"
         >
           <FaCommentAlt className="w-4 h-4" />
           <span>Try me!</span>
@@ -86,7 +86,7 @@ const ChatBot = () => {
           setIsOpen(!isOpen);
           setShowTooltip(false); // Hide tooltip when chat opens
         }}
-        className="w-14 h-14 rounded-full bg-blue-500 hover:bg-blue-600 text-white shadow-lg flex items-center justify-center transition-transform transform hover:scale-110"
+        className="w-14 h-14 rounded-full bg-lapis hover:bg-blue-600 text-white shadow-lg flex items-center justify-center transition-transform transform hover:scale-110"
         title={isOpen ? "Close Chat" : "Open Chat"}
       >
         💬
@@ -106,7 +106,7 @@ const ChatBot = () => {
 >
 
         {/* Header */}
-        <div className="bg-blue-500 text-white p-3 font-bold flex items-center justify-between rounded-t-lg shadow-md">
+        <div className="bg-lapis text-white p-3 font-bold flex items-center justify-between rounded-t-lg shadow-md">
           <span> 💬 AI Assistant</span>
           <button
             onClick={() => setIsOpen(false)}
@@ -169,7 +169,7 @@ const ChatBot = () => {
           />
           <button
             onClick={handleSendMessage}
-            className="bg-blue-500 text-white rounded-lg p-2 hover:bg-blue-600 transition duration-300 flex items-center justify-center"
+            className="bg-lapis text-white rounded-lg p-2 hover:bg-blue-600 transition duration-300 flex items-center justify-center"
           >
             ➤
           </button>
