@@ -8,7 +8,7 @@ export default function WebDesignPage() {
       <header className="bg-gradient-to-r from-lapis to-cerulean text-white py-20">
         <div className="max-w-7xl mx-auto text-center px-4">
           <h1 className="text-5xl font-heading font-bold tracking-tight leading-tight">
-            Build Stunning Websites for Your Plumbing Business
+            Build Stunning Websites for Your Chiropractor Business
           </h1>
           <p className="mt-6 text-lg font-sans font-light leading-relaxed max-w-3xl mx-auto">
             Your website is your digital storefront. Make it stand out with
@@ -27,7 +27,7 @@ export default function WebDesignPage() {
           <p className="text-lg font-sans text-gray-700 leading-relaxed max-w-3xl mx-auto">
             A well-designed website builds trust and credibility, helping you
             convert visitors into customers. With mobile-friendly designs and
-            fast loading times, your plumbing business will be ready to compete
+            fast loading times, your chiropractor business will be ready to compete
             online.
           </p>
         </section>
@@ -47,7 +47,7 @@ export default function WebDesignPage() {
                 Custom Website Design
               </h3>
               <p className="text-gray-700 font-sans text-base leading-relaxed">
-                Unique designs tailored to your plumbing business and audience.
+                Unique designs tailored to your chiropractor business and audience.
               </p>
             </div>
 
@@ -87,7 +87,7 @@ export default function WebDesignPage() {
           <ul className="list-none space-y-4 text-lg font-sans max-w-3xl mx-auto">
             <li className="flex items-center">
               <FaCheckCircle className="text-green-400 mr-4" />
-              Experienced in designing for plumbing businesses.
+              Experienced in designing for chiropractor businesses.
             </li>
             <li className="flex items-center">
               <FaCheckCircle className="text-green-400 mr-4" />
@@ -110,7 +110,7 @@ export default function WebDesignPage() {
             Ready to Build Your Digital Presence?
           </h2>
           <p className="text-lg font-sans text-gray-700 mb-8 max-w-3xl mx-auto">
-            Contact us today to get started on your custom plumbing website.
+            Contact us today to get started on your custom chiropractor website.
           </p>
           <a
             href="/contact"

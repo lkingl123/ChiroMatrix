@@ -12,16 +12,15 @@ export default function Header() {
 
     return (
         <header className="bg-white shadow-md sticky top-0 z-50">
-<div className="max-w-7xl mx-auto flex items-center justify-between py-0 px-4 md:px-6">
+<div className="max-w-7xl mx-auto flex items-center justify-between py-0 px-6">
     {/* Logo */}
-    <a href="/" className="flex-shrink-0 leading-none m-0">
+    <a href="/" className="flex-shrink-0 leading-none">
         <img
             src="/logo-bg.png"
             alt="chiropractic Logo"
-            className="max-w-[220px] max-h-[220px] object-contain"
+            className="max-w-[180px] max-h-[200px] object-contain"
         />
     </a>
-
 
     {/* Desktop Navigation */}
 
@@ -257,7 +256,7 @@ export default function Header() {
                             )}
                         </div>
                         <a
-                            href="https://calendly.com/successplumbing/15min"
+                            href="https://calendly.com/chiroMatrix/15min"
                             className="mt-4 inline-flex items-center justify-center bg-lapis text-white text-lg font-heading px-6 py-3 rounded-lg shadow-md hover:bg-cerulean transition duration-300"
                         >
                             <FaRegCalendarAlt className="inline-block" />

@@ -8,11 +8,11 @@ export default function SEOPage() {
       <header className="bg-gradient-to-r from-cerulean to-sky text-white py-20">
         <div className="max-w-7xl mx-auto text-center px-4">
           <h1 className="text-5xl font-heading font-bold tracking-tight leading-tight">
-            Boost Your Plumbing Business with SEO
+            Boost Your chiropractor Business with SEO
           </h1>
           <p className="mt-6 text-lg font-sans font-light leading-relaxed max-w-3xl mx-auto">
             Drive traffic, improve visibility, and grow your customer base with
-            our specialized SEO services for plumbers.
+            our specialized SEO services for chiropractors.
           </p>
         </div>
       </header>
@@ -25,7 +25,7 @@ export default function SEOPage() {
             Why SEO Matters
           </h2>
           <p className="text-lg font-sans text-gray-700 leading-relaxed max-w-3xl mx-auto">
-            Search Engine Optimization is the key to getting your plumbing
+            Search Engine Optimization is the key to getting your chiropractor
             business found online. It ensures you rank high on search engines
             and reach customers actively searching for your services.
           </p>
@@ -47,7 +47,7 @@ export default function SEOPage() {
               </h3>
               <p className="text-gray-700 font-sans text-sm leading-relaxed">
                 Identify the top-performing keywords to target the right
-                audience for your plumbing services.
+                audience for your chiropractor services.
               </p>
             </div>
 
@@ -74,7 +74,7 @@ export default function SEOPage() {
                 Local SEO
               </h3>
               <p className="text-gray-700 font-sans text-sm leading-relaxed">
-                Dominate local searches with strategies tailored to plumbers in
+                Dominate local searches with strategies tailored to chiropractors in
                 your area.
               </p>
             </div>
@@ -101,7 +101,7 @@ export default function SEOPage() {
             </li>
             <li className="flex items-center">
               <FaCheckCircle className="text-green-400 mr-4" />
-              Custom strategies designed for plumbing businesses.
+              Custom strategies designed for chiropractor businesses.
             </li>
           </ul>
         </section>
@@ -113,7 +113,7 @@ export default function SEOPage() {
           </h2>
           <p className="text-lg font-sans text-gray-700 mb-8 max-w-3xl mx-auto">
             Contact us today to learn more about how our SEO services can
-            transform your plumbing business.
+            transform your chiropractor business.
           </p>
           <a
             href="/contact"

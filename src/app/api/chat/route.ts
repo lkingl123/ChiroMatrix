@@ -4,28 +4,30 @@ import axios from "axios";
 export async function POST(req: Request) {
   const { message } = await req.json();
 
-  // FAQs
+  // FAQs for Chiropractic
   const faqs: { [key: string]: string } = {
     "What services do you offer?":
-      "We specialize in creating professional websites and digital marketing strategies for plumbing businesses. Our services include website design, SEO optimization, lead generation, and social media marketing.",
-    "How much does it cost to build a website for a plumbing business?":
-      "Our website packages start at $500 and vary depending on the complexity and features required. Contact us for a customized quote.",
+      "We specialize in creating professional websites and digital marketing strategies for chiropractic practices. Our services include website design, SEO optimization, lead generation, social media management, and AI chatbot integration.",
+    "How much does it cost to build a website for a chiropractic practice?":
+      "Our website packages start at $500 and vary depending on the complexity and features required. Contact us for a customized quote for your chiropractic practice.",
     "Do you offer marketing services?":
-      "Yes! We provide full-service marketing for plumbing businesses, including SEO, Google Ads, and social media management.",
+      "Yes! We provide full-service marketing for chiropractic practices, including social media management (Facebook, Instagram, LinkedIn), local SEO, and email campaigns.",
     "How long does it take to build a website?":
       "Typically, it takes 2-4 weeks to build a website, depending on the project's scope and features.",
     "Will my website be mobile-friendly?":
       "Absolutely! All our websites are designed to be fully responsive and work seamlessly on mobile, tablet, and desktop devices.",
     "Do you offer ongoing website maintenance?":
-      "Yes, we offer website maintenance plans to ensure your site stays updated and secure.",
+      "Yes, we offer website maintenance plans to ensure your site stays updated, secure, and optimized for performance.",
     "Can you help with lead generation?":
-      "Yes, we can create tailored marketing strategies to help your plumbing business generate more leads and grow your customer base.",
+      "Yes, we can create tailored marketing strategies, including local SEO and targeted campaigns, to help your chiropractic practice generate more leads and grow your patient base.",
     "What kind of support do you provide after the website is launched?":
       "We provide post-launch support, including website updates, technical assistance, and analytics to track your site's performance.",
-    "Do you have experience working with plumbing businesses?":
-      "Yes, we specialize in creating websites and marketing strategies specifically for plumbing businesses.",
+    "Do you have experience working with chiropractic practices?":
+      "Yes, we specialize in creating websites and marketing strategies specifically for chiropractic practices.",
     "Can I see examples of your work?":
-      "Of course! Check out our portfolio on the website to see examples of websites we've built for plumbing businesses.",
+      "Of course! Check out our portfolio on the website to see examples of websites we've built for chiropractic practices.",
+    "What are your pricing packages for chiropractic websites?":
+      "We offer tiered packages: \n1. Silver Package: $500 (One-time) + $60/month (Marketing subscription) \n2. Gold Package: $700 (One-time) + $100/month (Marketing subscription). Contact us for more details on features and customization.",
   };
 
   // Check if the user's message matches an FAQ
@@ -43,7 +45,7 @@ export async function POST(req: Request) {
           {
             role: "system",
             content:
-              "You are a concise assistant for plumbing website marketing. Keep answers short and clear.",
+              "You are a concise assistant for chiropractic website marketing. Keep answers short, clear, and relevant to chiropractic practices.",
           },
           { role: "user", content: message },
         ],

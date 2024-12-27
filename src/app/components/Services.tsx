@@ -9,7 +9,7 @@ export default function ValuePropositions() {
                     Why Choose Us?
                 </h2>
                 <p className="mt-4 text-gray-700 text-lg">
-                    Experience unmatched support and efficiency with our tailored solutions for your plumbing business.
+                    Experience unmatched support and efficiency with our tailored solutions for your chiropractic business.
                 </p>
 
                 {/* Value Proposition Grid */}

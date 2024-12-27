@@ -9,14 +9,14 @@ export default function BrandingPage() {
       <header className="bg-gradient-to-r from-lapis to-cerulean text-white py-20">
         <div className="max-w-7xl mx-auto text-center px-6">
           <h1 className="text-5xl font-heading font-bold tracking-tight leading-tight">
-            Elevate Your Plumbing Brand
+            Elevate Your chiropractic Brand
           </h1>
           <p className="mt-6 text-lg font-sans font-light leading-relaxed">
-            Build trust, recognition, and loyalty with professional branding tailored for plumbing businesses.
+            Build trust, recognition, and loyalty with professional branding tailored for chiropractic businesses.
           </p>
           <a
             href="/contact"
-            className="mt-8 inline-block bg-platinum text-indigo font-sans font-medium px-8 py-4 rounded-lg shadow-md hover:bg-white hover:text-lapis transition duration-300"
+            className="mt-8 inline-block bg-white text-indigo font-sans font-medium px-8 py-4 rounded-lg shadow-md hover:bg-platinum hover:text-lapis transition duration-300"
           >
             Get Started Now
           </a>
@@ -42,7 +42,7 @@ export default function BrandingPage() {
                 Professional Websites
               </h3>
               <p className="text-gray-700 text-sm leading-relaxed">
-                Build credibility and attract customers with a polished website tailored to plumbing businesses.
+                Build credibility and attract customers with a polished website tailored to chiropractic businesses.
               </p>
             </div>
             <div className="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
@@ -51,7 +51,7 @@ export default function BrandingPage() {
                 Marketing Expertise
               </h3>
               <p className="text-gray-700 text-sm leading-relaxed">
-                We craft marketing strategies that help plumbing businesses stand out and drive customer engagement.
+                We craft marketing strategies that help chiropractic businesses stand out and drive customer engagement.
               </p>
             </div>
             <div className="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
@@ -60,7 +60,7 @@ export default function BrandingPage() {
                 Local SEO
               </h3>
               <p className="text-gray-700 text-sm leading-relaxed">
-                Dominate local search results and ensure your plumbing business is visible to nearby customers.
+                Dominate local search results and ensure your chiropractic business is visible to nearby customers.
               </p>
             </div>
           </div>
@@ -110,7 +110,7 @@ export default function BrandingPage() {
   <ul className="list-none text-lg font-sans space-y-4 max-w-3xl mx-auto">
     <li className="flex items-center">
       <FaCheckCircle className="text-green-400 mr-4" />
-      Specialized in plumbing industry branding.
+      Specialized in chiropractic industry branding.
     </li>
     <li className="flex items-center">
       <FaCheckCircle className="text-green-400 mr-4" />
@@ -134,7 +134,7 @@ export default function BrandingPage() {
             Ready to Transform Your Brand?
           </h2>
           <p className="text-lg font-sans text-gray-700 mb-6">
-            Contact us today and take the first step toward elevating your plumbing business.
+            Contact us today and take the first step toward elevating your chiropractic business.
           </p>
           <a
             href="/contact"

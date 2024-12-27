@@ -8,11 +8,11 @@ export default function SocialMediaPage() {
       <header className="bg-gradient-to-r from-sky to-cerulean text-white py-20">
         <div className="max-w-7xl mx-auto text-center px-4">
           <h1 className="text-5xl font-heading font-bold tracking-tight leading-tight">
-            Amplify Your Plumbing Business on Social Media
+            Amplify Your Chiropractor Business on Social Media
           </h1>
           <p className="mt-6 text-lg font-sans font-light leading-relaxed max-w-3xl mx-auto">
             Connect, engage, and grow your audience with professional social
-            media strategies tailored for plumbers.
+            media strategies tailored for chiropractors.
           </p>
         </div>
       </header>
@@ -27,7 +27,7 @@ export default function SocialMediaPage() {
           <p className="text-lg font-sans text-gray-700 leading-relaxed max-w-3xl mx-auto">
             Social media is where your customers are. By establishing a strong
             presence, you can build trust, increase brand awareness, and grow
-            your plumbing business.
+            your chiropractor business.
           </p>
           <div className="mt-8 flex justify-center space-x-6">
             <FaFacebookF className="text-4xl text-blue-600 hover:text-blue-800 transition duration-300" />
@@ -60,7 +60,7 @@ export default function SocialMediaPage() {
               </h3>
               <p className="text-gray-700 font-sans text-sm leading-relaxed">
                 High-quality posts, videos, and infographics tailored to your
-                plumbing brand.
+                chiropractor brand.
               </p>
             </div>
 
@@ -77,7 +77,7 @@ export default function SocialMediaPage() {
           </div>
         </section>
 
-        {/* Section 3: Benefits of Social Media for Plumbers */}
+        {/* Section 3: Benefits of Social Media for chiropractor */}
         <section className="bg-gradient-to-r from-indigo to-lapis text-white py-16 px-6 rounded-lg">
           <h2 className="text-4xl font-heading font-bold text-center mb-8">
             Benefits of Social Media for Your Business
